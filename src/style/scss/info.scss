@@ -1,0 +1,69 @@
+.info {
+  margin: 9rem 0;
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+  align-items: center;
+  margin-right: 12vw;
+  min-height: 500px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: inherit;
+    min-height: 500px;
+
+    .info__header-container {
+      width: 100%;
+      padding-left: 12vw;
+      height: 20%;
+      display: flex;
+      .info__header {
+        font-size: 4rem;
+      }
+    }
+
+    .info__textbox {
+      height: 80%;
+      background-color: #f7f7f7;
+
+      .info__title {
+        margin: 25px 10px 0 12vw;
+        font-size: 2.4rem;
+        &::after {
+          content: "";
+          display: block;
+          width: 30px;
+          height: 3px;
+          background-color: black;
+        }
+      }
+
+      .info__text {
+        margin: 30px 80px 45px 12vw;
+        font-size: 1.5rem;
+        color: #808080;
+      }
+
+      .info__btn {
+        background: #f7f7f7;
+        color: $color-primary;
+        border: $color-primary 2px solid;
+        margin-left: 12vw;
+        font-size: 15px;
+        padding: 10px 40px;
+      }
+    }
+  }
+
+  &__img {
+    background-image: url(../assets/img/house-info-3.jpg);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    width: 50%;
+    height: 100%;
+  }
+}

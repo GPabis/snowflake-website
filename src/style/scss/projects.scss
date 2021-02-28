@@ -1,0 +1,186 @@
+.projects {
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  margin: 5rem 0 20rem;
+
+  &__header {
+    font-weight: 700;
+    font-size: 40px;
+    color: #111111;
+    margin: 0 0 5rem 12vw;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    height: 60%;
+
+    .projects__textbox {
+      width: 50%;
+      margin-left: 12vw !important;
+
+      .projects__icon {
+        height: 81px;
+        width: 80px;
+        &--house {
+          background-image: url(../assets/img/icon-1-blue.png);
+        }
+      }
+
+      .projects__title {
+        padding: 2rem 0;
+        font-size: 2.4rem;
+        color: $color-primary;
+        font-weight: 700;
+      }
+
+      .projects__text {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        color: #888888;
+        padding: 0 2rem 3rem 0;
+      }
+    }
+
+    .projects__menu {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      .projects__menu-item {
+        padding: 2rem 0;
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: "";
+          width: 5px;
+          padding: 2rem 0;
+          background-color: #cccccc;
+          height: 100%;
+        }
+
+        .projects__icon {
+          height: 50px;
+          width: 51px;
+          margin-left: 1.5rem;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          padding-left: 1.5rem;
+
+          &--house {
+            background-image: url(../assets/img/icon-1-gray.png);
+          }
+
+          &--blueprints {
+            background-image: url(../assets/img/icon-2-gray.png);
+          }
+
+          &--floor {
+            background-image: url(../assets/img/icon-3-gray.png);
+          }
+        }
+
+        .projects__menu-title {
+          font-size: 2.2rem;
+          padding-left: 1.5rem;
+          color: #cecece;
+        }
+      }
+
+      .projects__menu-item--selected {
+        background: #f7f7f7;
+
+        &::before {
+          content: "";
+          width: 5px;
+          padding: 2rem 0;
+          background-color: $color-primary;
+          height: 100%;
+        }
+
+        .projects__menu-title {
+          font-size: 2.2rem;
+          color: $color-primary;
+          font-weight: 500;
+          padding-left: 1.5rem;
+        }
+
+        .projects__icon--selected-house {
+          background-image: url(../assets/img/icon-1-blue.png);
+        }
+
+        .projects__icon--selected-blueprints {
+          background-image: url(../assets/img/icon-2-blue.png);
+        }
+
+        .projects__icon--selected-floor {
+          background-image: url(../assets/img/icon-3-blue.png);
+        }
+      }
+    }
+  }
+
+  .gallery__container {
+    height: 40%;
+  }
+
+  .gallery {
+    margin: 0 calc(12vw - 10px);
+    position: relative;
+
+    &__slider {
+      height: 250px;
+      .gallery__slide {
+        width: 33%;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 10px !important;
+        outline: none;
+        &--1 {
+          background-image: url(../assets/img/projects-house-1-min.png);
+        }
+        &--2 {
+          background-image: url(../assets/img/projects-house-2-min.png);
+        }
+        &--3 {
+          background-image: url(../assets/img/projects_house-3-min.png);
+        }
+        &--4 {
+          background-image: url(../assets/img/house-info-1.jpg);
+        }
+        &--5 {
+          background-image: url(../assets/img/house-info-2.jpg);
+        }
+      }
+    }
+  }
+
+  .gallery__arrows {
+    margin: 0 calc(12vw - 10px);
+    position: relative;
+    top: -120px;
+    display: flex;
+    color: $color-primary;
+
+    .gallery__arrow {
+      background: #fff;
+      padding: 0.5rem;
+    }
+
+    .gallery__arrow--right {
+      position: absolute;
+      right: 0;
+    }
+
+    .gallery_arrow--l,
+    .gallery_arrow--r {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,3 +1,39 @@
-body {
-  background-color: red;
+@import "./variable";
+@import "./nav.scss";
+@import "./header.scss";
+@import "./info.scss";
+@import "./projects.scss";
+@import "./about-us.scss";
+@import "./contact.scss";
+* {
+  margin: 0;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: $font-primary;
+}
+
+ul {
+  padding: 0px;
+}
+li {
+  list-style: none;
+  font-size: 1.5rem;
+  color: #888888;
+
+  a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #888888;
+  }
 }

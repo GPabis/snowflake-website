@@ -1,0 +1,86 @@
+.header {
+  height: calc(100vh - 100px);
+  position: relative;
+  min-height: 600px;
+
+  &__arrows {
+    position: relative;
+    top: calc(50% - 50px);
+  }
+
+  &__arrow {
+    display: flex;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 81px;
+    position: absolute;
+    color: $color-primary;
+    z-index: 10;
+    cursor: pointer;
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+
+  &__slider {
+    height: 100%;
+    max-height: 600px;
+  }
+
+  &__item {
+    height: calc(100vh - 100px) !important;
+    min-height: 600px !important;
+    outline: none !important;
+
+    &--skyscraper {
+      background: url("../assets/img/skyscraper.png") !important;
+    }
+
+    &--office {
+      background: url("../assets/img/hohyeong-lee-e0uCDHd19U4-unsplash (1).jpg") !important;
+    }
+
+    &--architecture {
+      background: url("../assets/img/lance-anderson-QdAAasrZhdk-unsplash (1).jpg") !important;
+    }
+
+    &--office,
+    &--skyscraper,
+    &--architecture {
+      background-attachment: fixed;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      background-position: center !important;
+    }
+  }
+
+  &__textbox {
+    width: 50vw;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #00458fda;
+    position: relative;
+    top: calc(70% - 50px);
+    color: #ffffff;
+  }
+
+  &__title {
+    width: calc(100%-12vw);
+    margin: 0 0rem 2rem 12vw;
+    font-size: 3rem;
+  }
+
+  &__text {
+    font-size: 2rem;
+    margin: 1rem 0 2rem 12vw;
+  }
+}
