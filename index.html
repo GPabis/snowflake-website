@@ -15,9 +15,10 @@
   <nav class="nav">
     <img src="dist/assets/img/Layer 1.svg" alt="Snowflake Logo" class="nav__logo">
     <div class="nav__menu">
-      <a href="#information-section" class="nav__menu--item" id="information">Information</a>
-      <a href="#projects-section" class="nav__menu--item" id="projects">Projects</a>
-      <a href="#about-us-section" class="nav__menu--item" id="about-us">About us</a>
+      <a href="javascript:void(0)" class="nav__menu--item" id="information">Information</a>
+      <a href="javascript:void(0)" class="nav__menu--item" id="projects">Projects</a>
+      <a href="javascript:void(0)" class="nav__menu--item" id="about-us">About us</a>
+      <a href="javascript:void(0)" class="nav__menu--item" id="contact">Contact</a>
     </div>
   </nav>
   <main>
@@ -136,6 +137,41 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolores excepturi ad alias vitae placeat.</p>
       </div>
     </section>
+
+    <section class="map">
+      <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=1920&amp;height=500&amp;hl=en&amp;q=Blackwell%20St%20Durham+(snowflake)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='http://maps-generator.com/pl'>Maps Generator PL</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=6333eaadacb640a2171eea22853e49ecab5c8875'></script>
+
+      <div class="form">
+        <div class="form__container">
+          <h3 class="form__title">Contact</h3>
+          <p class="form__text">Lorem ipsum dolor sit amet.</p>
+          <form class="form__post" action="" method="#">
+            <div class="form__input">
+              <label for="name" class="form__label form__label--resized" >Name</label>
+              <input type="text" name="name" class="form__input-box">
+            </div>
+            <div class="form__input">
+              <label for="surname" class="form__label">Surname</label>
+              <input type="text" name="surname" class="form__input-box">
+            </div>
+            <div class="form__input">
+              <label for="email" class="form__label">E-mail</label>
+              <input type="text" name="email" class="form__input-box">
+            </div>
+            <div class="form__input form__input--textbox">
+              <label for="text" class="form__label form__label--textbox">Message</label>
+              <textarea type="textarea" name="email" class="form__input-box"></textarea>
+            </div>
+            <div class="form__submit">
+              <button class="form__button disabled">
+                SEND
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
   <footer class="contact-us">
     <img src="/dist/assets/img/snowflake.png" alt="" class="contact-us__logo">
@@ -176,7 +212,6 @@
     </div>
   </footer>
 <script src="./dist/assets/lib/slick/slick.min.js"></script>
-<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 
 <script src="dist/js/script.min.js"></script>
 

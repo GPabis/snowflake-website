@@ -183,4 +183,13 @@
       cursor: pointer;
     }
   }
+
+  @media (max-width: 996px) {
+    .projects__textbox {
+      width: 70%;
+    }
+    .projects__menu {
+      width: 30%;
+    }
+  }
 }

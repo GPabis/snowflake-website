@@ -66,4 +66,31 @@
     width: 50%;
     height: 100%;
   }
+
+  @media (max-width: 996px) {
+    flex-direction: column;
+    margin: 0 5vw;
+    height: 1000px;
+    &__container {
+      width: 90%;
+
+      .info__header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+      }
+
+      .info__textbox .info__btn {
+        display: block;
+        width: 200px;
+        margin: 0px auto;
+      }
+    }
+
+    &__img {
+      width: 90%;
+      height: 100%;
+    }
+  }
 }

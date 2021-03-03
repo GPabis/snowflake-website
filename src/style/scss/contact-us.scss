@@ -1,0 +1,108 @@
+.map {
+  margin: 20rem 0rem 10rem 0rem;
+  position: relative;
+  width: 100%;
+}
+
+.form {
+  position: absolute;
+  height: 700px;
+  width: 30%;
+  z-index: 111111;
+  top: -10rem;
+  right: 0;
+  margin-right: 12vw;
+  background-color: #ffffff;
+  box-shadow: 0rem 0rem 1rem #ddd;
+
+  &__container {
+    width: 70%;
+    margin: 4rem auto;
+
+    .form__title {
+      font-size: 4rem;
+      color: #111111;
+      margin-bottom: 1rem;
+    }
+
+    .form__text {
+      font-size: 1.5rem;
+      color: #888888;
+    }
+
+    .form__post {
+      margin-top: 3rem;
+      width: 100%;
+      position: relative;
+
+      .form__input {
+        margin: 3rem 0;
+        height: 3.5rem;
+        width: 100%;
+        border: 1px solid #ddd;
+        position: relative;
+        z-index: 3;
+
+        &-box {
+          height: 100%;
+          width: 100%;
+          padding: 0 1rem;
+          outline: none;
+          border: 0 solid #fff;
+          border-radius: 0px;
+          resize: none;
+          font-size: 1.4rem;
+          color: #888;
+          position: relative;
+          z-index: 3;
+          background: rgba(0, 0, 0, 0);
+        }
+
+        &--textbox {
+          height: 25rem;
+          padding-top: 1rem;
+        }
+
+        .form__label {
+          position: absolute;
+          z-index: 1;
+          font-size: 1.4rem;
+          color: #888;
+          top: 25%;
+          margin-left: 1rem;
+          opacity: 1;
+          transition: font-size 0.5s, top 0.5s, margin-left 0.5s, opacity 0.5s;
+          &--textbox {
+            top: 0;
+            margin-top: 1rem;
+            transition: font-size 0.5s, margin-left 0.5s, top 0.5s,
+              margin-top 0.5s;
+
+            &[data-resized="true"] {
+              margin-top: 0.1rem;
+            }
+          }
+
+          &[data-resized="true"] {
+            font-size: 1.1rem;
+            margin-left: 0.3rem;
+            top: 0;
+            opacity: 0.5;
+            transition: font-size 0.5s, margin-left 0.5s, top 0.5s,
+              margin-top 0.5s;
+          }
+        }
+      }
+
+      .form__button {
+        text-align: center;
+        width: 100%;
+        background: $color-primary;
+        color: #ffffff;
+        padding: 1rem 0;
+        font-size: 1.3rem;
+        border: none;
+      }
+    }
+  }
+}
